@@ -1,0 +1,26 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    margin-left: 50px;
+    color: aliceblue;
+    border-color: rgb(12, 12, 12);
+}
+
+.card {
+    border-radius: 20px;
+    transition: 0.3s;
+    border-color: black;
+    box-shadow: 50px;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}

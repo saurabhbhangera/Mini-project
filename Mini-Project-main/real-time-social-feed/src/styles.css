@@ -1,0 +1,8 @@
+body {
+    background-image: url('back2.jpg');
+    /* Make sure the file is in assets folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,22 @@
+<div class="container mt-4">
+    <h2 class="text-center">{{ user.id === 0 ? 'Add User' : 'Edit User' }}</h2>
+
+    <form (ngSubmit)="saveUser()" class="card p-4 shadow-lg">
+        <div class="mb-3">
+            <label class="form-label">Name:</label>
+            <input [(ngModel)]="user.name" name="name" class="form-control" required minlength="3" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Email:</label>
+            <input [(ngModel)]="user.email" name="email" class="form-control" required email />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Phone:</label>
+            <input [(ngModel)]="user.phone" name="phone" class="form-control" required pattern="^[0-9]{10}$" />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">{{ user.id === 0 ? 'Add User' : 'Update User' }}</button>
+    </form>
+</div>
