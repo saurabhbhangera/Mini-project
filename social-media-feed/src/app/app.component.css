@@ -1,0 +1,70 @@
+/* Global Styling for App */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Styling the Header */
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    display: inline-block;
+  }
+  
+  /* Notification Button */
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Chat & Feed Containers */
+  app-chat, app-feed {
+    display: block;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  app-chat:hover, app-feed:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    app-chat, app-feed {
+      max-width: 90%;
+    }
+  }
+  
